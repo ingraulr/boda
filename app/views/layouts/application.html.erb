@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <title> _-B & R-_ </title>
+<%= favicon_link_tag 'favicon.ico' %>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <%= csrf_meta_tags %>
@@ -20,7 +21,7 @@ p {line-height: 2}
     background-position: center;
     background-size: cover;
 }
-.bgimg {background-image: image-url('banner.jpg')}
+.bgimg {background-image:  url(<%= asset_path 'banner.jpg' %>)}
 .bgimg2 {background-image: url("http://i1378.photobucket.com/albums/ah93/ingraulreyes/mesa_zpsf1egkloy.png")}
 .bgimg3 {background-image: url("http://www.nosotras.com/wp-content/uploads/2014/11/49a5f8ba8460ed04f146727ebdffe9b8.jpg")}
 </style>
@@ -29,11 +30,11 @@ p {line-height: 2}
   <!-- Navbar (sticky bottom) -->
   <div class="w3-bottom w3-hide-small">
     <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-      <a href="#home" style="width:20%" class="w3-bar-item w3-button">Inicio</a>
+      <a href="/" style="width:20%" class="w3-bar-item w3-button">Inicio</a>
       <a href="#us" style="width:20%" class="w3-bar-item w3-button">Brenda & Raul</a>
       <a href="#wedding" style="width:20%" class="w3-bar-item w3-button">Boda</a>
       <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Confirma tu reservacion</a>
-      <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">blog</a>
+      <a href="#mesa" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Mesa de Regalos</a>
 
     </div>
   </div>
@@ -44,6 +45,42 @@ p {line-height: 2}
     <p>Powered by <a href="https://www.facebook.com/ing.raulreyes" title="W3.CSS" target="_blank" class="w3-hover-text-green">@Raul Reyes</a></p>
   </footer>
   <div class="w3-hide-small" style="margin-bottom:32px"> </div>
-
+<script type="text/javascript">
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "4.11.2017 - B & R";
+        var res = " ";
+        var speed = 200;
+        var pos = val;
+        msg = "   _- "+msg+" -_";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
 </body>
 </html>

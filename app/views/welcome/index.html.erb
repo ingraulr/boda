@@ -2,7 +2,7 @@
 
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-text-white w3-center">
+  <div class="w3-display-topmiddle w3-text-white w3-center">
 <b>
     <h1 class="w3-jumbo">Brenda & Raul</h1>
     <h2>Nos casamos..</h2>
@@ -15,24 +15,27 @@
 <div class="w3-container w3-padding-64 w3-pale-red " id="us">
   <div class="w3-content">
     <h1 class="w3-center w3-text-black"><b>Brenda & Raul</b></h1>
-    <!-- SnapWidget -->
-      <!-- end slideshow-->
-        <p><i>
-              <b>
-                 Pues... Lo conocí hace tiempo, cuando era pequeña. Lo había visto algunas veces en el pueblo (Tepames), pero hasta ahí.
-                 Tenemos familia en común, así que en algunas ocasiones coincidiamos. Aunque estoy segura que él si pensaba en mi porque
-                 vino a mi casa con el pretexto de llevarse una tortuga que teníamos, hasta recuerda que ropa traía! Yo sólo era una niña
-                 de 7 años y ya me andaba acosando! </br>
-                 Así transcurrieron los años, lo veía, me veía, era todo; hasta que volvímos a coincidir en alguna red social, si, ésa en la
-                 que subías una foto al día y la gente te dejaba 20 comentarios. Así que un día (17 de abril de 2009), al revisar mi página vi
-                 que tenía un comentario de "Eugenio Tejeda"... Y pensé "y este mono quién es?" Ya sé, no lo ubicaba de nombre, hasta que vi su foto.
-                 Y obviamente, le contesté en su página agradeciéndole sus comentarios... Y así fué como empezamos a ser amigos, sólo por internet.
-                 Primero firmando nuestras páginas, después, de manera "sutil" me pidió mi dirección de correo electrónico, mi teléfono celular,
-                 el número de mi casa, a qué horas me conectaba al messenger y todo medio por el cuál pudiera estar en contacto conmigo. (Ya lo traía). </b></i></p>
-      <div class="w3-left">
-          <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <br>
+          <div class="w3-left">
+            <script src="https://snapwidget.com/js/snapwidget.js"></script>
             <iframe src="https://snapwidget.com/embed/375367" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:700px; height:700px"></iframe>
-      </div>
+            <p>
+              <i>
+                <b>
+                  Pues... Lo conocí hace tiempo, cuando era pequeña. Lo había visto algunas veces en el pueblo (Tepames), pero hasta ahí.
+                  Tenemos familia en común, así que en algunas ocasiones coincidiamos. Aunque estoy segura que él si pensaba en mi porque
+                  vino a mi casa con el pretexto de llevarse una tortuga que teníamos, hasta recuerda que ropa traía! Yo sólo era una niña
+                  de 7 años y ya me andaba acosando! </br>
+                  Así transcurrieron los años, lo veía, me veía, era todo; hasta que volvímos a coincidir en alguna red social, si, ésa en la
+                  que subías una foto al día y la gente te dejaba 20 comentarios. Así que un día (17 de abril de 2009), al revisar mi página vi
+                  que tenía un comentario de "Eugenio Tejeda"... Y pensé "y este mono quién es?" Ya sé, no lo ubicaba de nombre, hasta que vi su foto.
+                  Y obviamente, le contesté en su página agradeciéndole sus comentarios... Y así fué como empezamos a ser amigos, sólo por internet.
+                  Primero firmando nuestras páginas, después, de manera "sutil" me pidió mi dirección de correo electrónico, mi teléfono celular,
+                  el número de mi casa, a qué horas me conectaba al messenger y todo medio por el cuál pudiera estar en contacto conmigo. (Ya lo traía).
+                </b>
+              </i>
+            </p>
+          </div><br>
     </p><br>
     <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Detalles sobre la boda</a></p>
   </div>
@@ -47,51 +50,78 @@
   </div>
 </div>
 
+<div class="w3-container  w3-pale-red  w3-center">
+  <img class="w3-round-large " src= ' <%= asset_path 'img1.JPG' %>' style="width:100%;margin:64px 0">
+</div>
 <!-- Wedding information -->
-<div class="w3-container w3-padding-64 w3-pale-red  w3-center" id="wedding">
-  <img class="w3-round-large " src="http://www.nosotras.com/wp-content/uploads/2014/11/49a5f8ba8460ed04f146727ebdffe9b8.jpg" style="width:100%;margin:64px 0">
+<div class="w3-container  w3-pale-red  w3-center" id="wedding">
   <div class="w3-content">
+    <img class="w3-round-large " src= ' <%= asset_path 'anillos.png' %>' style="width:25%"><br>
     <h1 class="w3-text-grey"><b>La Boda</b></h1>
     <div class="w3-row">
-      <div class="w3-half">
+      <!-- Misa -->
+      <div class="w3-third">
         <b>
-          <h2>Cuando?</h2>
+          <img class="w3-round-large " src= ' <%= asset_path 'piniglesia.png' %>' style="width:15%">
+          <h2>MISA</h2>
           <p>Ceremonia Religiosa- 5:00pm</p>
-          <p>Boda Civil- 7:00pm</p>
+          <p>Parroquia de la Sagrada Familia - Col. Hidalgo</p>
           <p>Recepcion y Cena - 8:00pm</p>
        </b>
+       <p class="w3-xlarge">
+         <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off " style="padding:8px 60px">Como llegar?</button>
+         <img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:10%">
+       </p>
       </div>
-      <div class="w3-half">
-        <h2>Donde?</h2>
-        <b>
-          <p>Parroquia de la Sagrada Familia - Col. Hidalgo</p>
-          <p>Jardin Vesalles - Calle uruguay Cuahutemoc sur</p>
-        </b>
-        <p class="w3-xlarge">
-          <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Como llegar?</button>
-        </p>
-      </div>
+        <!-- Civil -->
+        <div class="w3-third">
+          <b>
+            <img class="w3-round-large " src= ' <%= asset_path 'civil.png' %>' style="width:15%">
+            <h2>ENLACE CIVIL</h2>
+            <p>Boda Civil- 7:00pm </br> Jardin Versalles</p>
+         </b>
+        </div>
+        <!-- Recepcion -->
+        <div class="w3-third">
+          <img class="w3-round-large " src= ' <%= asset_path 'bar.png' %>' style="width:10%">
+          <h2>RECEPCION</h2>
+          <b>
+            <p>Jardin Vesalles </br> Calle uruguay #51 Cuahutemoc sur</p>
+            <p>Recepcion y Cena - 8:00pm</p>
+          </b>
+          <p class="w3-xlarge">
+            <img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:10%">
+            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-center w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Como llegar?</button>
+          </p>
+        </div>
     </div>
-    <div class="w3-col l8 m5">
-     <div id="googleMap" style="width:180%;height:400px;" class="w3-center"></div>
-   </div>
-  </div>
+    <!-- Como llegar Iglesia Jardin -->
+    <p class="w3-xlarge ">
+      <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off " style="padding:8px 60px">Como llegar Iglesia-Jardin</button><br>
+      <img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:10%">
+    </p>
+    <!-- end -->
 
+  </div>
+  <img class="w3-round-large " src= ' <%= asset_path 'img2.JPG' %>' style="width:100%;margin:64px 0">
 </div>
 <!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <hr>
-  <h1>Queremos saber que piensas? puedes dejarnos tus comentarios, ideas o lo que quieras en nuestro blog</h1>
-  <p class="w3-large">Entra a nuestro blog!!</p>
-  <p class="w3-xlarge">
-    <%= link_to '<button class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" type="button"><b>Blog de la boda</b></button>'.html_safe, blog_path%>
-  </p>
-  <hr>
+<div class="w3-container  w3-pale-red w3-center w3-wide" id="rsvp">
+  <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%"><br>
   <h1>ESPERAMOS CONTAR CON TU PRESENCIA!</h1>
-  <p class="w3-large">Porfavor confirmanos tu asisentica antes de: 1 de octubre 2017</p>
+  <p class="w3-large">Porfavor confirmanos tu asisentica antes de: 15 de octubre 2017</p>
   <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
-
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+  <img class="w3-round-large " src= ' <%= asset_path 'img6.JPG' %>' style="width:100%;margin:64px 0">
+</div>
+<!-- MESA regalos -->
+<div class="w3-container w3-padding-12 w3-pale-red w3-center w3-wide" id="mesa">
+  <img class="w3-round-large " src= ' <%= asset_path 'regalo.png' %>' style="width:10%"><br>
+  <h1>MESA DE REGALOS</h1>
+  <p class="w3-large">Aqui puedes encontrar los sitios web de nuestra Mesa de Regalos</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-round w3-purple w3-opacity w3-hover-opacity-off" style="padding:8px 60px">SITIOS MESA DE REGALOS</button>
   </p>
 </div>
 
@@ -99,6 +129,7 @@
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
     <div class="w3-container w3-white w3-center">
+      <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%">
       <h1 class="w3-wide">NOS PODRAS ACOMPANAR?</h1>
       <p>Nos encantaria que nos acompanaras ese dia tan especial.</p>
       <form>
@@ -116,16 +147,122 @@
     </div>
   </div>
 </div>
-<!-- como llegar modal -->
+
+<!-- como llegar JARDIN modal -->
 <div id="id02" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:1000px">
     <div class="w3-container w3-white w3-center">
-      <h1 class="w3-wide">Direcciones:</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26879.32593158758!2d-115.47335964065147!3d32.635067228989115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x80d770c6ca03ff31%3A0xebc0cd62e88d39b8!2sParroquia+De+La+Sagrada+Familia%2C+colonia+b+c%2C+Calle+56+2020%2C+Hidalgo%2C+21389+Hidalgo%2C+B.C.!3m2!1d32.6112566!2d-115.44524419999999!4m5!1s0x80d770153f68059d%3A0x7ca7bf6867e4b5ba!2sJardin+Versalles%2C+Avenida+Rep%C3%BAblica+de+Uruguay%2C+Cuauht%C3%A9moc+Sur%2C+Mexicali%2C+B.C.!3m2!1d32.6588803!2d-115.4511917!5e0!3m2!1ses-419!2smx!4v1493655425571" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <p><i>Sinceramente: Brenda & Raul</i></p>
+      <h3 class="w3-wide">Direcciones para: <b>Jardin Versalles</b></h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.021188963022!2d-115.45338574887028!3d32.658880280914566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d770153f68059d%3A0x7ca7bf6867e4b5ba!2sJardin+Versalles!5e0!3m2!1ses-419!2smx!4v1506033270004" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <p>
+        <img class="w3-round-large " src= ' <%= asset_path 'location.png' %>' style="width:3%">
+        <b>
+          Av. República de Uruguay 51, Cuauhtémoc Sur, 21200 Mexicali, B.C.</br>
+        </b>
+        <img class="w3-round-large " src= ' <%= asset_path 'phone.png' %>' style="width:3%">
+         686 568 2211 </br>
+        <i>Sinceramente: Brenda & Raul</i>
+      </p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-block w3-green">Listo Ya se como llegar!! </button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-block w3-red">Cerrar </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+<!-- como llegar JARDIN modal -->
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:1000px">
+    <div class="w3-container w3-white w3-center">
+      <h3 class="w3-wide">Direcciones para: <b>Parroquia Sagrada Familia</b></h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.8096233379515!2d-115.44743824887135!3d32.611256580929215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d770c6ca03ff31%3A0xebc0cd62e88d39b8!2sParroquia+De+La+Sagrada+Familia!5e0!3m2!1ses-419!2smx!4v1506033538995" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <p>
+        <img class="w3-round-large " src= ' <%= asset_path 'location.png' %>' style="width:3%">
+        <b>
+          Calle 56 2020, Hidalgo, 21389 Mexicali, B.C.</br>
+        </b>
+        <img class="w3-round-large " src= ' <%= asset_path 'phone.png' %>' style="width:3%">
+         686 561 6029 </br>
+        <i>Sinceramente: Brenda & Raul</i>
+      </p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-block w3-green">Listo Ya se como llegar!! </button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-block w3-red">Cerrar </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+<!-- como llegar IGLESIA-JARDIN modal -->
+<div id="id04" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:3000px">
+    <div class="w3-container w3-white w3-center">
+      <h3 class="w3-wide"> MAPA & INDICACIONES </b></h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26879.32593158758!2d-115.47335964065147!3d32.635067228989115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x80d770c6ca03ff31%3A0xebc0cd62e88d39b8!2sParroquia+De+La+Sagrada+Familia%2C+colonia+b+c%2C+Calle+56+2020%2C+Hidalgo%2C+21389+Hidalgo%2C+B.C.!3m2!1d32.6112566!2d-115.44524419999999!4m5!1s0x80d770153f68059d%3A0x7ca7bf6867e4b5ba!2sJardin+Versalles%2C+Avenida+Rep%C3%BAblica+de+Uruguay%2C+Cuauht%C3%A9moc+Sur%2C+Mexicali%2C+B.C.!3m2!1d32.6588803!2d-115.4511917!5e0!3m2!1ses-419!2smx!4v1493655425571" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p>
+          <h4>Si tienes algun problema Comunicate con:</h4>
+          <b>
+            Raul:
+            <img class="w3-round-large " src= ' <%= asset_path 'phone.png' %>' style="width:3%">
+            686 203 3395
+          </b>
+          <b>Brenda:</b>
+          <img class="w3-round-large " src= ' <%= asset_path 'phone.png' %>' style="width:3%">
+          <b>
+            686 135 6137
+          </b>
+        </p>
+        <div class="w3-row">
+          <div class="w3-half">
+            <button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-block w3-green">Listo Ya se como llegar!! </button>
+          </div>
+          <div class="w3-half">
+            <button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-block w3-red">Cerrar </button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+
+<!-- MESA REGALOS modal -->
+<div id="id05" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <img class="w3-round-large " src= ' <%= asset_path 'regalo.png' %>' style="width:20%">
+      <h3 class="w3-wide">Mesa de regalos</h3>
+      <p>Puedes dar click en el logo de la tienda que mas guestes:</p>
+      <div class="w3-row">
+        <div class="w3-third">
+          <a href="https://www.liverpool.com.mx/tienda/giftregistry/giftRegistry.jsp" target="_blank" >
+            <img class="w3-round-large " src= ' <%= asset_path 'liver2.png' %>' style="width:100%">
+          </a>
+        </div>
+        <div class="w3-third">
+          <a href="https://www.target.com/gift-registry/" target="_blank" >
+            <img class="w3-round-large " src= ' <%= asset_path 'target.png' %>' style="width:80%">
+          </a>
+        </div>
+        <div class="w3-third">
+          <img class="w3-round-large " src= ' <%= asset_path 'walm.png' %>' style="width:90%">
+        </div>
+      </div>
+      <p> <b>De antemano muchas gracias</b> </br> <i>Sinceramente: Brenda & Raul</i></p>
       <div class="w3-row">
         <div class="w3-one">
-          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-block w3-green w3-center">Lito ya se como llegar!!</button>
+          <button onclick="document.getElementById('id05').style.display='none'" type="button" class="w3-button w3-xlarge w3-block w3-red">Cerrar </button>
         </div>
       </div>
     </div>
