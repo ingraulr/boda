@@ -3,41 +3,49 @@
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-topmiddle w3-text-white w3-center">
-<b>
-    <h1 class="w3-jumbo">Brenda & Raul</h1>
-    <h2>Nos casamos..</h2>
-    <h2><b>04.11.2017</b></h2>
-  </b>
+      <h1 class="loca">Brenda & Raul</h1>
+      <h2>Nos casamos..</h2>
+      <h2><b>04.11.2017</b></h2>
   </div>
 </header>
-
+<div class="w3-wide  w3-pale-red ">
+  <br>
+  <img class="w3-round-large " src= ' <%= asset_path 'separador5.png' %>' style="width:100%">
+</div>
 <!-- About / Brenda & raul -->
 <div class="w3-container w3-padding-64 w3-pale-red " id="us">
-  <div class="w3-content">
-    <h1 class="w3-center w3-text-black"><b>Brenda & Raul</b></h1>
-    <br>
-          <div class="w3-left">
-            <script src="https://snapwidget.com/js/snapwidget.js"></script>
-            <iframe src="https://snapwidget.com/embed/375367" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:700px; height:700px"></iframe>
-            <p>
-              <i>
-                <b>
-                  Pues... Lo conocí hace tiempo, cuando era pequeña. Lo había visto algunas veces en el pueblo (Tepames), pero hasta ahí.
-                  Tenemos familia en común, así que en algunas ocasiones coincidiamos. Aunque estoy segura que él si pensaba en mi porque
-                  vino a mi casa con el pretexto de llevarse una tortuga que teníamos, hasta recuerda que ropa traía! Yo sólo era una niña
-                  de 7 años y ya me andaba acosando! </br>
-                  Así transcurrieron los años, lo veía, me veía, era todo; hasta que volvímos a coincidir en alguna red social, si, ésa en la
-                  que subías una foto al día y la gente te dejaba 20 comentarios. Así que un día (17 de abril de 2009), al revisar mi página vi
-                  que tenía un comentario de "Eugenio Tejeda"... Y pensé "y este mono quién es?" Ya sé, no lo ubicaba de nombre, hasta que vi su foto.
-                  Y obviamente, le contesté en su página agradeciéndole sus comentarios... Y así fué como empezamos a ser amigos, sólo por internet.
-                  Primero firmando nuestras páginas, después, de manera "sutil" me pidió mi dirección de correo electrónico, mi teléfono celular,
-                  el número de mi casa, a qué horas me conectaba al messenger y todo medio por el cuál pudiera estar en contacto conmigo. (Ya lo traía).
-                </b>
-              </i>
-            </p>
-          </div><br>
-    </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Detalles sobre la boda</a></p>
+  <div class="">
+    <h1 class="loca  w3-center w3-text-grey">Nuestra Historia </h1>
+     </h1>
+    <br><br>
+    <div class="w3-row">
+      <div class="w3-half">
+        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+        <iframe src="https://snapwidget.com/embed/375367" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:900px; height:700px"></iframe>
+      </div>
+      <div class="w3-half">
+        <div class="w3-left">
+          <p>
+            <i>
+              <b>
+                Pues... Lo conocí hace tiempo, cuando era pequeña. Lo había visto algunas veces en el pueblo (Tepames), pero hasta ahí.
+                Tenemos familia en común, así que en algunas ocasiones coincidiamos. Aunque estoy segura que él si pensaba en mi porque
+                vino a mi casa con el pretexto de llevarse una tortuga que teníamos, hasta recuerda que ropa traía! Yo sólo era una niña
+                de 7 años y ya me andaba acosando! </br>
+                Así transcurrieron los años, lo veía, me veía, era todo; hasta que volvímos a coincidir en alguna red social, si, ésa en la
+                que subías una foto al día y la gente te dejaba 20 comentarios. Así que un día (17 de abril de 2009), al revisar mi página vi
+                que tenía un comentario de "Eugenio Tejeda"... Y pensé "y este mono quién es?" Ya sé, no lo ubicaba de nombre, hasta que vi su foto.
+                Y obviamente, le contesté en su página agradeciéndole sus comentarios... Y así fué como empezamos a ser amigos, sólo por internet.
+                Primero firmando nuestras páginas, después, de manera "sutil" me pidió mi dirección de correo electrónico, mi teléfono celular,
+                el número de mi casa, a qué horas me conectaba al messenger y todo medio por el cuál pudiera estar en contacto conmigo. (Ya lo traía).
+              </b>
+            </i>
+          </p>
+        </div><br>
+      </p><br>
+      </div>
+    </div>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-xxlarge w3-round w3-red w3-opacity w3-hover-opacity-off  ">Detalles sobre la boda</a></p>
   </div>
   </div>
 
@@ -123,8 +131,8 @@
   <p class="w3-xlarge">
     <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-round w3-purple w3-opacity w3-hover-opacity-off" style="padding:8px 60px">SITIOS MESA DE REGALOS</button>
   </p>
+  <img class="w3-round-large " src= ' <%= asset_path 'img3.JPG' %>' style="width:100%;margin:64px 0">
 </div>
-
 <!-- RSVP modal -->
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
@@ -242,10 +250,11 @@
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
     <div class="w3-container w3-white w3-center">
       <img class="w3-round-large " src= ' <%= asset_path 'regalo.png' %>' style="width:20%">
-      <h3 class="w3-wide">Mesa de regalos</h3>
+      <h3>Mesa de regalos</h3>
       <p>Puedes dar click en el logo de la tienda que mas guestes:</p>
       <div class="w3-row">
         <div class="w3-third">
+          <p ><b># Evento 42129680</b></p>
           <a href="https://www.liverpool.com.mx/tienda/giftregistry/giftRegistry.jsp" target="_blank" >
             <img class="w3-round-large " src= ' <%= asset_path 'liver2.png' %>' style="width:100%">
           </a>
