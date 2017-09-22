@@ -25,16 +25,16 @@
       </div>
       <div class="w3-half w3-panel w3-border w3-round-xxlarge">
         <div class="w3-left historia">
-            Pues... Lo conocí hace tiempo, cuando era pequeña. Lo había visto algunas veces en el pueblo (Tepames), pero hasta ahí.
-            Tenemos familia en común, así que en algunas ocasiones coincidiamos. Aunque estoy segura que él si pensaba en mi porque
-            vino a mi casa con el pretexto de llevarse una tortuga que teníamos, hasta recuerda que ropa traía! Yo sólo era una niña
-            de 7 años y ya me andaba acosando! </br>
-            Así transcurrieron los años, lo veía, me veía, era todo; hasta que volvímos a coincidir en alguna red social, si, ésa en la
-            que subías una foto al día y la gente te dejaba 20 comentarios. Así que un día (17 de abril de 2009), al revisar mi página vi
-            que tenía un comentario de "Eugenio Tejeda"... Y pensé "y este mono quién es?" Ya sé, no lo ubicaba de nombre, hasta que vi su foto.
-            Y obviamente, le contesté en su página agradeciéndole sus comentarios... Y así fué como empezamos a ser amigos, sólo por internet.
-            Primero firmando nuestras páginas, después, de manera "sutil" me pidió mi dirección de correo electrónico, mi teléfono celular,
-            el número de mi casa, a qué horas me conectaba al messenger y todo medio por el cuál pudiera estar en contacto conmigo. (Ya lo traía).
+          " Aunque yo hablara todas las lenguas de los hombres y de los ángeles, si no tengo amor, soy como una campana que resuena o un platillo que retiñe.
+            Aunque tuviera el don de la profecía y conociera todos los misterios y toda la ciencia, aunque tuviera toda la fe, una fe capaz de trasladar montañas, si no tengo amor, no soy nada.
+            Aunque repartiera todos mis bienes para alimentar a los pobres y entregara mi cuerpo a las llamas, si no tengo amor, no me sirve para nada.</br>
+            El amor es paciente, es servicial; el amor no es envidioso, no hace alarde, no se envanece,
+            no procede con bajeza, no busca su propio interés, no se irrita, no tiene en cuenta el mal recibido,
+            no se alegra de la injusticia, sino que se regocija con la verdad.
+            El amor todo lo disculpa, todo lo cree, todo lo espera, todo lo soporta.</br>
+            El amor no pasará jamás. Las profecías acabarán, el don de lenguas terminará, la ciencia desaparecerá."</br>
+
+            "Si no tengo amor, no soy nada." Carta de San Pablo a los Corintios 13:1
         </div><br>
       </p><br>
       </div>
@@ -73,7 +73,6 @@
        </b>
        <p class="w3-xlarge">
          <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off " style="padding:8px 60px">Como llegar?</button>
-         <img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:10%">
        </p>
       </div>
         <!-- Civil -->
@@ -93,7 +92,6 @@
             <p>Recepcion y Cena - 8:00pm</p>
           </b>
           <p class="w3-xlarge">
-            <img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:10%">
             <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-center w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Como llegar?</button>
           </p>
         </div>
@@ -108,48 +106,121 @@
   </div>
   <img class="w3-round-large " src= ' <%= asset_path 'img2.JPG' %>' style="width:100%;margin:64px 0">
 </div>
-<!-- RSVP section -->
-<div class="w3-container  w3-pale-red w3-center w3-wide" id="rsvp">
-  <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%"><br>
-  <h1>ESPERAMOS CONTAR CON TU PRESENCIA!</h1>
-  <p class="w3-large">Porfavor confirmanos tu asisentica antes de: 15 de octubre 2017</p>
-  <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
-  </p>
-  <img class="w3-round-large " src= ' <%= asset_path 'img6.JPG' %>' style="width:100%;margin:64px 0">
-</div>
-<!-- MESA regalos -->
-<div class="w3-container w3-padding-12 w3-pale-red w3-center w3-wide" id="mesa">
-  <img class="w3-round-large " src= ' <%= asset_path 'regalo.png' %>' style="width:10%"><br>
-  <h1>MESA DE REGALOS</h1>
-  <p class="w3-large">Aqui puedes encontrar los sitios web de nuestra Mesa de Regalos</p>
-  <p class="w3-xlarge">
-    <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-round w3-purple w3-opacity w3-hover-opacity-off" style="padding:8px 60px">SITIOS MESA DE REGALOS</button>
-  </p>
-  <img class="w3-round-large " src= ' <%= asset_path 'img3.JPG' %>' style="width:100%;margin:64px 0">
-</div>
-<!-- RSVP modal -->
-<div id="id01" class="w3-modal">
+  <!-- RSVP section -->
+  <div class="w3-container  w3-pale-red w3-center w3-wide" id="rsvp">
+    <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%"><br>
+    <h1>ESPERAMOS CONTAR CON TU PRESENCIA!</h1>
+    <p class="w3-large">Porfavor confirmanos tu asisentica antes de: 15 de octubre 2017</p>
+    <p class="w3-xlarge">
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+    </p>
+    <img class="w3-round-large " src= ' <%= asset_path 'img6.JPG' %>' style="width:100%;margin:64px 0">
+  </div>
+  <!-- MESA regalos -->
+  <div class="w3-container w3-padding-12 w3-pale-red w3-center w3-wide" id="mesa">
+    <img class="w3-round-large " src= ' <%= asset_path 'regalo.png' %>' style="width:10%"><br>
+    <h1>MESA DE REGALOS</h1>
+    <p class="w3-large">Aqui puedes encontrar los sitios web de nuestra Mesa de Regalos</p>
+    <p class="w3-xlarge">
+      <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-round w3-purple w3-opacity w3-hover-opacity-off" style="padding:8px 60px">SITIOS MESA DE REGALOS</button>
+    </p>
+    <img class="w3-round-large " src= ' <%= asset_path 'img3.JPG' %>' style="width:100%;margin:64px 0">
+  </div>
+  <!-- END MESA regalos -->
+
+  <!-- INSTAGRAM -->
+  <div class="w3-container w3-padding-12 w3-pale-red w3-center w3-wide" id="mesa">
+    <img class="w3-round-large " src= ' <%= asset_path 'insta.png' %>' style="width:10%"><br>
+    <h1 class="insta">Comparte tus fotos del gran dia con nosotros</h1>
+    <p class="w3-large">Puedes usar el  <img class="w3-round" src= ' <%= asset_path 'hashtag.png' %>' style="width:3%">Hashtag
+      <p class="w3-text-blue">#ByR041117</p> para compartir tus fotos
+    </p>
+    <div class="w3-row">
+      <div class="w3-half">
+        <img class="w3-round-large " src= ' <%= asset_path 'img4.JPG' %>' style="width:50%;margin:64px 0">
+      </div>
+      <div class="w3-half">
+        <img class="w3-round-large " src= ' <%= asset_path 'img5.JPG' %>' style="width:50%;margin:64px 0">
+      </div>
+    </div>
+  </div>
+  <!-- END INSTAGRAM -->
+
+  <!-- RSVP modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+      <div class="w3-container w3-white w3-center">
+        <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%">
+        <h1 >NOS PODRAS ACOMPANAR?</h1>
+        <p>Nos encantaria que nos acompanaras ese dia tan especial.</p>
+        <form>
+          <input class="w3-input w3-border" type="text" placeholder="Nombre o Familia" name="name" autofocus required>
+        </form>
+        <p><i>Sinceramente: Brenda & Raul</i></p>
+        <div class="w3-row">
+          <div class="w3-half">
+            <button onclick="document.getElementById('id11').style.display='block'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-green">Si, claro!! :) </button>
+          </div>
+          <div class="w3-half">
+            <button onclick="document.getElementById('id12').style.display='block'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-red">No, podre :( </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END RSVP modal -->
+
+  <!-- RSVP modal CONFIRMADA -->
+  <div id="id11" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+      <div class="w3-container w3-white w3-center">
+        <img class="w3-round-large " src= ' <%= asset_path 'check.png' %>' style="width:50%">
+        <h1><b>RESERVACION CONFIRMADA</b></h1>
+        <h2>GRACIAS !!</h2>
+        <h4>
+          Comunicate con nosotros lo antes posible para corroborar tus datos:</p>
+        </h4>
+          <img class="w3-round-large " src= ' <%= asset_path 'phone.png' %>' style="width:3%">
+          <b>
+          686 203 3395 Raul - 686 135 6137- Brenda
+        </b>
+         </br>
+        <p><i>Sinceramente: Brenda & Raul</i></p>
+        <div class="w3-row">
+          <div class="w3-one">
+            <button onclick="document.getElementById('id11').style.display='none';document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-green">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END RSVP modal CONFIRMADA -->
+
+<!-- RSVP modal RECHAZADA -->
+<div id="id12" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
     <div class="w3-container w3-white w3-center">
-      <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%">
-      <h1 class="w3-wide">NOS PODRAS ACOMPANAR?</h1>
-      <p>Nos encantaria que nos acompanaras ese dia tan especial.</p>
-      <form>
-        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
-      </form>
+      <img class="w3-round-large " src= ' <%= asset_path 'sad.png' %>' style="width:50%">
+      <h1 class="w3-text-red"><b>RESERVACION RECHAZADA</b></h1>
+      <h2>Tienes alguna duda o problema?</h2>
+      <h4>
+        Comunicate con nosotros lo antes posible para solucionarlo </p>
+      </h4>
+        <img class="w3-round-large " src= ' <%= asset_path 'phone.png' %>' style="width:3%">
+        <b>
+        686 203 3395 Raul - 686 135 6137- Brenda
+      </b>
+       </br>
       <p><i>Sinceramente: Brenda & Raul</i></p>
       <div class="w3-row">
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-green">Si, claro!! :) </button>
-        </div>
-        <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-red">No, podre :( </button>
+        <div class="w3-one">
+          <button onclick="document.getElementById('id12').style.display='none';document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-green">Aceptar</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- END RSVP modal RECHAZADA -->
 
 <!-- como llegar JARDIN modal -->
 <div id="id02" class="w3-modal">
@@ -168,10 +239,10 @@
       </p>
       <div class="w3-row">
         <div class="w3-half">
-          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-block w3-green">Listo Ya se como llegar!! </button>
+          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-round w3-button w3-xlarge w3-block w3-green">Listo, se como llegar!! </button>
         </div>
         <div class="w3-half">
-          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-block w3-red">Cerrar </button>
+          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-round w3-button w3-block w3-xlarge w3-red">Cerrar </button>
         </div>
       </div>
     </div>
@@ -196,10 +267,10 @@
       </p>
       <div class="w3-row">
         <div class="w3-half">
-          <button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-block w3-green">Listo Ya se como llegar!! </button>
+          <button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3 round w3-block w3-xlarge w3-green">Listo, se como llegar!! </button>
         </div>
         <div class="w3-half">
-          <button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-block w3-red">Cerrar </button>
+          <button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-round w3-block w3-xlarge w3-red">Cerrar </button>
         </div>
       </div>
     </div>
@@ -228,10 +299,10 @@
         </p>
         <div class="w3-row">
           <div class="w3-half">
-            <button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-block w3-green">Listo Ya se como llegar!! </button>
+            <button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-round w3-block w3-xlarge w3-green">Listo, se como llegar!! </button>
           </div>
           <div class="w3-half">
-            <button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-block w3-red">Cerrar </button>
+            <button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-round w3-block w3-xlarge w3-red">Cerrar </button>
           </div>
         </div>
     </div>
