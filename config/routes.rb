@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'blog', to: 'articles#home'
 
-
+  resources :songs
 
   resources :articles do
     resources :comments
