@@ -1,11 +1,16 @@
+<br><br>
+<%= form_for Song.new do |f| %>
+  <div class="w3-row">
+    <div class="w3-one">
+      <%= f.text_field :titulo, class: "w3-input w3-border w3-round", placeholder:'Nombre o titulo'%>
+    </div>
+  </div>
+  <br><br>
+  <div class="w3-row">
+    <div class="w3-one">
+      <%= f.submit 'Aceptar', class: "w3-button w3-xlarge w3-round-xlarge w3-block w3-green" , :onclick => "document.getElementById('id14').style.display='block'" %>
+    </div>
+  </div>
 
-<%= form_for :song do |f| %>
-  <p>
-    <%= f.label :titulo %><br>
-    <%= f.text_field :titulo %>
-  </p>
- 
-  <p>
-    <%= f.submit %>
-  </p>
+
 <% end %>
