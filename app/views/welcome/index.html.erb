@@ -7,7 +7,7 @@
       <div class="w3-display-topmiddle w3-text-white w3-center ">
         <h1 class="loca">Brenda & Raul</h1>
         <h2>Nos casamos..</h2>
-        <h2><b>04.11.2017</b></h2>
+        <h2><b>04.11.2017</b></h2><br><br><br>
       </div>
     </div>
   </div>
@@ -54,10 +54,16 @@
     </div>
   </div>
   </div>
+
+
   <!-- SEPARADOR -->
   <div class="w3-wide  w3-pale-red w3-center">
     <br><br>
-    <img class="w3-round-large w3-center " src= ' <%= asset_path 'cake.png' %>' style="width:15%">
+    <img class="w3-round-large " src= ' <%= asset_path 'reloj.svg' %>' style="width:5%">
+    <h1 class="insta">Solo Faltan:</h1>
+    <div class="popup" onmouseover="myFunction()"><h1 class="insta" id="demo"></h1>
+      <span class="popuptext" id="myPopup"><h3>Ya faltaaa menooos!</h3></span>
+    </div>
     <br><br>
   </div>
   <!-- SEPARADOR -->
@@ -89,19 +95,19 @@
 <div class="w3-container  w3-pale-red  w3-center" id="wedding">
   <div class="w3-content">
     <img class="w3-round-large " src= ' <%= asset_path 'anillos.png' %>' style="width:25%"><br>
-    <h1 class="w3-text-grey"><b>La Boda</b></h1>
+    <h1 class="insta w3-text-grey"><b>La Boda</b></h1>
     <div class="w3-row">
       <!-- Misa -->
       <div class="w3-third">
         <b>
           <img class="w3-round-large " src= ' <%= asset_path 'piniglesia.png' %>' style="width:15%">
           <h2>MISA</h2>
-          <p>Ceremonia Religiosa- 5:00pm</p>
+          <p><b>-Ceremonia Religiosa- 5:00pm</b></p>
+        </b>
           <p>Parroquia de la Sagrada Familia - Col. Hidalgo</p>
           <p>Recepcion y Cena - 8:00pm</p>
-       </b>
        <p class="w3-xlarge">
-         <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off " style="padding:8px 60px">Como llegar?</button>
+         <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off " style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:15%"><b>Como llegar?</b></button>
        </p>
       </div>
         <!-- Civil -->
@@ -109,19 +115,20 @@
           <b>
             <img class="w3-round-large " src= ' <%= asset_path 'civil.png' %>' style="width:15%">
             <h2>ENLACE CIVIL</h2>
-            <p>Boda Civil- 7:00pm </br> Jardin Versalles</p>
-         </b>
+            <p><b>-Boda Civil- 7:00pm</b> </br>
+            </b>
+              Jardin Versalles</p>
         </div>
         <!-- Recepcion -->
         <div class="w3-third">
           <img class="w3-round-large " src= ' <%= asset_path 'bar.png' %>' style="width:10%">
           <h2>RECEPCION</h2>
           <b>
-            <p>Jardin Vesalles </br> Calle uruguay #51 Cuahutemoc sur</p>
-            <p>Recepcion y Cena - 8:00pm</p>
+            <p>-Recepcion y Cena - 9:00pm</p>
           </b>
+            <p>Jardin Vesalles </br> Calle uruguay #51 Cuahutemoc sur</p>
           <p class="w3-xlarge">
-            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-center w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Como llegar?</button>
+            <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-center w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:15%"><b>Como llegar?</b></button>
           </p>
         </div>
     </div>
@@ -130,18 +137,17 @@
       <div class="w3-container  w3-pale-red w3-center w3-wide" id="r">
         <div class="w3-row">
           <div class="w3-one">
-              <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off " style="padding:8px 60px">Como llegar Iglesia-Jardin</button><br>
-              <img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:10%">
-
+            <p class="w3-xlarge">
+              <button onclick="document.getElementById('id04').style.display='block'" class="w3-button  w3-round w3-green w3-opacity w3-hover-opacity-off " style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:5%"> <b>Como llegar Iglesia-Jardin</b></button><br>
+            </p>
           </div>
         </div>
       </div>
-    <!-- end -->
-
-
   </div>
   <img class="w3-round-large " src= ' <%= asset_path 'img2.JPG' %>' style="width:100%;margin:64px 0">
 </div>
+<!-- end -->
+
   <!-- RSVP section -->
   <div class="w3-container  w3-pale-red w3-center w3-wide" id="rsvp">
     <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%"><br>
@@ -159,7 +165,9 @@
     <p class="w3-large w3-wide">Aqui puedes encontrar los sitios web de nuestra Mesa de Regalos</p>
     <div class="w3-row">
       <div class="one">
-          <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-round w3-purple w3-opacity w3-hover-opacity-off" style="padding:8px 60px">SITIOS MESA DE REGALOS</button>
+        <p class="w3-xlarge">
+          <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-round w3-purple w3-opacity w3-hover-opacity-off" style="padding:8px 60px"><b>SITIOS MESA DE REGALOS</b></button>
+        </p>
       </div>
     </div>
     <img class="w3-round-large " src= ' <%= asset_path 'img3.JPG' %>' style="width:100%;margin:64px 0">
@@ -212,6 +220,7 @@
       <br>
       <div class="w3-half ">
         <h2 class="w3-center">
+          <img class="w3-round-large  " src= ' <%= asset_path 'list.png' %>' style="width:5%">
           Canciones agregadas:
         </h2>
         <div class=" w3-right w3-panel w3-border ">
@@ -232,17 +241,17 @@
         </div>
         <p>
           <b>
-        > Aqui agrega tu cancion favorita
+           <img class="w3-round-large " src= ' <%= asset_path 'play2.png' %>' style="width:3%"> Aqui agrega tu cancion favorita
           </b>
         </p>
         <p class="w3-xlarge">
-          <button onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'flecha.png' %>' style="width:7%">
-Agregar cancion</button>
+          <button onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Agregar cancion</button>
         </p>
       </div>
     </div>
   </div>
   <!-- END SPOTify -->
+
 
   <!-- SOTiFY modal -->
   <div id="id13" class="w3-modal">
@@ -284,11 +293,9 @@ Agregar cancion</button>
         <img class="w3-round-large " src= ' <%= asset_path 'rsvp.png' %>' style="width:10%">
         <h1 >NOS PODRAS ACOMPANAR?</h1>
         <p>Nos encantaria que nos acompanaras ese dia tan especial.</p>
-        <form>
-          <input class="w3-input w3-border" id="formInput" type="text" placeholder="Nombre o Familia" name="name" autofocus required>
+        <form >
+          <input class="w3-input w3-border" id="id1" type="text" min="1" max="50" placeholder="Nombre o Familia" name="name" autofocus required>
         </form>
-
-
         <p><i>Sinceramente: Brenda & Raul</i></p>
         <div class="w3-row">
           <div class="w3-half">
@@ -302,6 +309,7 @@ Agregar cancion</button>
       </div>
     </div>
   </div>
+
   <!-- END RSVP modal -->
 
   <!-- RSVP modal CONFIRMADA -->
@@ -492,6 +500,40 @@ Agregar cancion</button>
 </div>
 <!-- end -->
 
+<!-- COUNTDOWN -->
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 4, 2017 17:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    <!-- END COUNTDOWN -->
+
 <!-- Google map script -->
 <script>
 function myMap()
@@ -513,3 +555,11 @@ function myMap()
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWavkAJEWPBMOys2-RYKOGDPtBj1EhOJc&callback=myMap"></script>
 
 <!-- slidshow javascript -->
+
+<script type="text/javascript">
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
