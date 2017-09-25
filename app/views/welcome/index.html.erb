@@ -12,10 +12,14 @@
     </div>
   </div>
 </header>
+
+<!-- SEPARADOR -->
 <div class="w3-wide  w3-pale-red ">
   <br>
   <img class="w3-round-large " src= ' <%= asset_path 'separador5.png' %>' style="width:100%">
 </div>
+<!-- SEPARADOR -->
+
 <!-- About / Brenda & raul -->
 <div class="w3-container w3-padding-64 w3-pale-red " id="us">
   <div class="w3-row">
@@ -44,16 +48,23 @@
             El amor no pasará jamás. Las profecías acabarán, el don de lenguas terminará, la ciencia desaparecerá."</br>
 
             "Si no tengo amor, no soy nada." Carta de San Pablo a los Corintios 13:1
-        </div><br>
-      </p><br>
+        </div>
+      </p>
       </div>
     </div>
-
   </div>
   </div>
+  <!-- SEPARADOR -->
+  <div class="w3-wide  w3-pale-red w3-center">
+    <br><br>
+    <img class="w3-round-large w3-center " src= ' <%= asset_path 'cake.png' %>' style="width:15%">
+    <br><br>
+  </div>
+  <!-- SEPARADOR -->
 
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
+  <img class="w3-round-large " src= ' <%= asset_path 'save.png' %>' style="width:40%">
   <div class="w3-display-middle w3-text-white w3-center">
     <h1 class="w3-jumbo">Estas invitado..! </h1><br>
     <h2>Por supuesto..</h2>
@@ -61,8 +72,16 @@
       <iframe  class="w3-round-large"width="1200" height="450" src="https://www.youtube.com/embed/vg7xL7TZyKI?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
+  <img class="w3-round-large w3-display-right " src= ' <%= asset_path 'inv.png' %>' style="width:20%">
 </div>
 
+<!-- SEPARADOR -->
+<div class="w3-wide  w3-pale-red ">
+  <br><br>
+  <img class="w3-round-large " src= ' <%= asset_path 'separador5.png' %>' style="width:100%">
+  <br><br>
+</div>
+<!-- SEPARADOR -->
 <div class="w3-container  w3-pale-red  w3-center">
   <img class="w3-round-large " src= ' <%= asset_path 'img1.JPG' %>' style="width:100%;margin:64px 0">
 </div>
@@ -149,7 +168,10 @@
 
   <!-- INSTAGRAM -->
   <div class="w3-container w3-padding-12 w3-pale-red w3-center w3-wide" id="mesa">
-    <img class="w3-round-large " src= ' <%= asset_path 'insta.png' %>' style="width:10%"><br>
+    <img class="w3-round-large " src= ' <%= asset_path 'insta.png' %>' style="width:10%">
+    <img class="w3-round-large " src= ' <%= asset_path 'fb.png' %>' style="width:10%">
+    <img class="w3-round-large " src= ' <%= asset_path 'tw.png' %>' style="width:10.5%">
+    <br>
     <div class="w3-row">
       <div class="w3-one">
         <h1 class="insta">Comparte tus fotos del gran dia con nosotros</h1>
@@ -192,13 +214,13 @@
         <h2 class="w3-center">
           Canciones agregadas:
         </h2>
-        <div class=" w3-right">
+        <div class=" w3-right w3-panel w3-border ">
           <% if @songs.nil? || @songs.empty? %>
             <h2 class="w3-text-red w3-center"> NO hay canciones registradas se el primero en Agregar!!</h2>
             <% else %>
             <table class="w3-right">
               <tr>
-                <th class="w3-left">Titulo</th>
+                <th class="w3-left w3-bottombar	">Canciones Agregadas</th>
               </tr class="w3-left">
               <% @songs.each do |song| %>
               <tr>
@@ -208,9 +230,14 @@
             </table>
           <% end %>
         </div>
-        <p>Aqui puedes agregar tu cancion favorita</p>
+        <p>
+          <b>
+        > Aqui agrega tu cancion favorita
+          </b>
+        </p>
         <p class="w3-xlarge">
-          <button onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Agregar cancion</button>
+          <button onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'flecha.png' %>' style="width:7%">
+Agregar cancion</button>
         </p>
       </div>
     </div>
@@ -267,6 +294,7 @@
           <div class="w3-half">
             <button onclick="document.getElementById('id11').style.display='block'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-green">Si, claro!! :) </button>
           </div>
+          <br><br>
           <div class="w3-half">
             <button onclick="document.getElementById('id12').style.display='block'" type="button" class="w3-button w3-xlarge w3-round-xlarge w3-block w3-red">No, podre :( </button>
           </div>
@@ -333,7 +361,11 @@
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:1000px">
     <div class="w3-container w3-white w3-center">
       <h3 class="w3-wide">Direcciones para: <b>Jardin Versalles</b></h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.021188963022!2d-115.45338574887028!3d32.658880280914566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d770153f68059d%3A0x7ca7bf6867e4b5ba!2sJardin+Versalles!5e0!3m2!1ses-419!2smx!4v1506033270004" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="w3-row">
+        <div class="w3-one video-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.021188963022!2d-115.45338574887028!3d32.658880280914566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d770153f68059d%3A0x7ca7bf6867e4b5ba!2sJardin+Versalles!5e0!3m2!1ses-419!2smx!4v1506033270004" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
       <p>
         <img class="w3-round-large " src= ' <%= asset_path 'location.png' %>' style="width:3%">
         <b>
@@ -361,7 +393,11 @@
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:1000px">
     <div class="w3-container w3-white w3-center">
       <h3 class="w3-wide">Direcciones para: <b>Parroquia Sagrada Familia</b></h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.8096233379515!2d-115.44743824887135!3d32.611256580929215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d770c6ca03ff31%3A0xebc0cd62e88d39b8!2sParroquia+De+La+Sagrada+Familia!5e0!3m2!1ses-419!2smx!4v1506033538995" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="w3-row">
+        <div class="w3-one video-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.8096233379515!2d-115.44743824887135!3d32.611256580929215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d770c6ca03ff31%3A0xebc0cd62e88d39b8!2sParroquia+De+La+Sagrada+Familia!5e0!3m2!1ses-419!2smx!4v1506033538995" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
       <p>
         <img class="w3-round-large " src= ' <%= asset_path 'location.png' %>' style="width:3%">
         <b>
@@ -389,7 +425,12 @@
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:3000px">
     <div class="w3-container w3-white w3-center">
       <h3 class="w3-wide"> MAPA & INDICACIONES </b></h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26879.32593158758!2d-115.47335964065147!3d32.635067228989115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x80d770c6ca03ff31%3A0xebc0cd62e88d39b8!2sParroquia+De+La+Sagrada+Familia%2C+colonia+b+c%2C+Calle+56+2020%2C+Hidalgo%2C+21389+Hidalgo%2C+B.C.!3m2!1d32.6112566!2d-115.44524419999999!4m5!1s0x80d770153f68059d%3A0x7ca7bf6867e4b5ba!2sJardin+Versalles%2C+Avenida+Rep%C3%BAblica+de+Uruguay%2C+Cuauht%C3%A9moc+Sur%2C+Mexicali%2C+B.C.!3m2!1d32.6588803!2d-115.4511917!5e0!3m2!1ses-419!2smx!4v1493655425571" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="w3-row">
+        <div class="w3-one video-container">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26879.32593158758!2d-115.47335964065147!3d32.635067228989115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x80d770c6ca03ff31%3A0xebc0cd62e88d39b8!2sParroquia+De+La+Sagrada+Familia%2C+colonia+b+c%2C+Calle+56+2020%2C+Hidalgo%2C+21389+Hidalgo%2C+B.C.!3m2!1d32.6112566!2d-115.44524419999999!4m5!1s0x80d770153f68059d%3A0x7ca7bf6867e4b5ba!2sJardin+Versalles%2C+Avenida+Rep%C3%BAblica+de+Uruguay%2C+Cuauht%C3%A9moc+Sur%2C+Mexicali%2C+B.C.!3m2!1d32.6588803!2d-115.4511917!5e0!3m2!1ses-419!2smx!4v1493655425571" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
         <p>
           <h4>Si tienes algun problema Comunicate con:</h4>
           <b>
@@ -403,7 +444,7 @@
             686 135 6137
           </b>
         </p>
-        <div class="w3-row">
+        <div class="w3-row video-container">
           <div class="w3-half">
             <button onclick="document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-round w3-block w3-xlarge w3-green">Listo, se como llegar!! </button>
           </div>
