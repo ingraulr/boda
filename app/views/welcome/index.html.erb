@@ -170,6 +170,9 @@
           Canciones agregadas:
         </h2>
         <div class=" w3-right">
+          <% if @songs.nil? || @songs.empty? %>
+          <h2 class="w3-text-red"> NO hay canciones registradas se el primero en Agregar!!</h2>
+          <% else %>
           <table class="w3-right">
             <tr>
               <th class="w3-left">Titulo</th>
@@ -180,7 +183,7 @@
             </tr>
             <% end %>
           </table>
-
+        <% end %>
         </div>
         <p>Aqui puedes agregar tu cancion favorita</p>
         <p class="w3-xlarge">
