@@ -61,7 +61,7 @@
     <br><br>
     <img class="w3-round-large " src= ' <%= asset_path 'reloj.svg' %>' style="width:5%">
     <h1 class="insta">Solo Faltan:</h1>
-    <div class="popup" onmouseover="myFunction()"><h1 class="insta" id="demo"></h1>
+    <div class="popup" onmouseover="myFunction()"><h1 class="insta w3-text-white" id="demo"></h1>
       <span class="popuptext" id="myPopup"><h3>Ya faltaaa menooos!</h3></span>
     </div>
     <br><br>
@@ -105,7 +105,6 @@
           <p><b>-Ceremonia Religiosa- 5:00pm</b></p>
         </b>
           <p>Parroquia de la Sagrada Familia - Col. Hidalgo</p>
-          <p>Recepcion y Cena - 8:00pm</p>
        <p class="w3-xlarge">
          <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off " style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:15%"><b>Como llegar?</b></button>
        </p>
@@ -117,7 +116,7 @@
             <h2>ENLACE CIVIL</h2>
             <p><b>-Boda Civil- 7:00pm</b> </br>
             </b>
-              Jardin Versalles</p>
+              Terraza - Jardin Versalles</p>
         </div>
         <!-- Recepcion -->
         <div class="w3-third">
@@ -137,7 +136,7 @@
       <div class="w3-container  w3-pale-red w3-center w3-wide" id="r">
         <div class="w3-row">
           <div class="w3-one">
-            <button onclick="document.getElementById('id04').style.display='block'" class="w3-button  w3-round w3-green w3-opacity w3-hover-opacity-off " style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:15%"><b class="insta2">Como llegar Iglesia-Jardin</b></button><br>
+            <button onclick="document.getElementById('id04').style.display='block'" class="w3-button  w3-round w3-green w3-opacity w3-hover-opacity-off " style="padding:8px 60px"><img class="w3-round-large " src= ' <%= asset_path 'maps.png' %>' style="width:15%"><b class="loca2">Ruta iglesia - jardin</b></button><br>
           </div>
         </div>
       </div>
@@ -265,11 +264,10 @@
         <h3 >Numero de cuenta</h3>
         <div class="w3-row">
           <div class="w3-half">
-            <img class="w3-round-large " src= ' <%= asset_path 'santander.png' %>' style="width:75%">
+            <img class="w3-round-large " src= ' <%= asset_path 'santander.png' %>' style="width:75%" onclick="document.getElementById('id22').style.display='block'">
           </div>
           <div class="w3-half">
-            <img class="w3-round-large " src= ' <%= asset_path 'bancomer.png' %>' style="width:50%">
-
+            <img class="w3-round-large " src= ' <%= asset_path 'bancomer.png' %>' style="width:50%" onclick="document.getElementById('id23').style.display='block'" >
           </div>
         </div>
         <p class="w3-xlarge">
@@ -279,6 +277,33 @@
     </div>
   </div>
   <!-- END Banco modal -->
+  <!-- Santander  modal -->
+  <div id="id22" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+      <div class="w3-container w3-white w3-center">
+        <h3 class="w3-text-green" >Cuenta Santander</h3>
+        <img class="w3-round-large " src= ' <%= asset_path 'santander.png' %>' style="width:45%">
+        <p class="w3-xlarge">
+          <button onclick="document.getElementById('id20').style.display='none';document.getElementById('id22').style.display='none';document.getElementById('id21').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Aceptar</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- END Santander modal -->
+
+  <!-- Bancomer modal -->
+  <div id="id23" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+      <div class="w3-container w3-white w3-center">
+        <h3 class="w3-text-green" >Cuenta Bancomer</h3>
+        <img class="w3-round-large " src= ' <%= asset_path 'bancomer.png' %>' style="width:45%">
+        <p class="w3-xlarge">
+          <button onclick="document.getElementById('id20').style.display='none';document.getElementById('id23').style.display='none';document.getElementById('id21').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Aceptar</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- END Bancomer modal -->
 
   <!-- Gracias modal -->
   <div id="id21" class="w3-modal">
